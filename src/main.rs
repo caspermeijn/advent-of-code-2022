@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-use advent_of_code_2022::day01;
+use advent_of_code_2022::*;
 
 fn main() {
     let text = include_str!("../data/day01.txt");
@@ -24,4 +24,12 @@ fn main() {
     println!("Day 1, challange 1: {}", challange1);
     let challange2 = day01::challange2(&elves);
     println!("Day 1, challange 2: {}", challange2);
+
+    let text = include_str!("../data/day02.txt");
+    let data = day02::challange1::parse(text);
+    let challange1 = day02::challange1::challange1(&data);
+    println!("Day 2, challange 1: {}", challange1);
+    let data = day02::challange2::parse(text);
+    let challange2 = day02::challange2::challange2(&data);
+    println!("Day 2, challange 2: {}", challange2);
 }
