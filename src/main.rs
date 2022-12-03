@@ -32,4 +32,11 @@ fn main() {
     let data = day02::challange2::parse(text);
     let challange2 = day02::challange2::challange2(&data);
     println!("Day 2, challange 2: {}", challange2);
+
+    let text = include_str!("../data/day03.txt");
+    let data = day03::parse(text);
+    let challange1 = day03::challange1(&data);
+    println!("Day 3, challange 1: {}", challange1);
+    let challange2 = day03::challange2(&data);
+    println!("Day 3, challange 2: {}", challange2);
 }
