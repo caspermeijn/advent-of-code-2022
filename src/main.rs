@@ -46,4 +46,11 @@ fn main() {
     println!("Day 4, challange 1: {}", challange1);
     let challange1 = day04::challange2(&data);
     println!("Day 4, challange 2: {}", challange1);
+
+    let text = include_str!("../data/day05.txt");
+    let data = day05::parse(text);
+    let challange1 = day05::challange1(data.clone());
+    println!("Day 5, challange 1: {}", challange1);
+    let challange1 = day05::challange2(data);
+    println!("Day 5, challange 2: {}", challange1);
 }
