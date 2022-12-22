@@ -53,4 +53,25 @@ fn main() {
     println!("Day 5, challange 1: {}", challange1);
     let challange1 = day05::challange2(data);
     println!("Day 5, challange 2: {}", challange1);
+
+    let text = include_str!("../data/day06.txt");
+    let data = day06::parse(text);
+    let challange1 = day06::challange1(&data);
+    println!("Day 6, challange 1: {}", challange1);
+    let challange2 = day06::challange2(&data);
+    println!("Day 6, challange 2: {}", challange2);
+
+    let text = include_str!("../data/day07.txt");
+    let data = day07::parse(text);
+    let challange1 = day07::challange1(&data);
+    println!("Day 7, challange 1: {}", challange1);
+    let challange2 = day07::challange2(&data);
+    println!("Day 7, challange 2: {}", challange2);
+
+    let text = include_str!("../data/day08.txt");
+    let data = day08::parse(text);
+    let challange1 = day08::challange1(&data);
+    println!("Day 8, challange 1: {}", challange1);
+    let challange2 = day08::challange2(&data);
+    println!("Day 8, challange 2: {}", challange2);
 }
